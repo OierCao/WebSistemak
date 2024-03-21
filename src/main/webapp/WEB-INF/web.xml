@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <session-config>
+        <session-timeout>1</session-timeout>
+    </session-config>
+    
+    <listener>
+        <listener-class>nirepaketea.MySessionListener</listener-class>
+    </listener>
+    
+    <servlet>
+        <servlet-name>NireServleta</servlet-name>
+        <servlet-class>com.example.websistemak.HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NireServleta</servlet-name>
+        <url-pattern>/servletarenURIa</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NireVCServleta</servlet-name>
+        <servlet-class>com.example.websistemak.HelloVCServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NireVCServleta</servlet-name>
+        <url-pattern>/VCservletarenURIa</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>NireJSPServleta</servlet-name>
+        <servlet-class>com.example.websistemak.HelloJSPServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NireJSPServleta</servlet-name>
+        <url-pattern>/JSPservletarenURIa</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NireGoiburuakServleta</servlet-name>
+        <servlet-class>com.example.websistemak.HelloGoiburuakServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NireGoiburuakServleta</servlet-name>
+        <url-pattern>/GoiburuakservletarenURIa</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NireDatuBilketaServleta</servlet-name>
+        <servlet-class>com.example.websistemak.HelloDatuBilketaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NireDatuBilketaServleta</servlet-name>
+        <url-pattern>/DatuBilketaservletarenURIa</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ServletLogin</servlet-name>
+        <servlet-class>nirepaketea.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletLogin</servlet-name>
+        <url-pattern>/servlet/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>nirepaketea.MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/servlet/Main</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CacheServlet</servlet-name>
+        <servlet-class>nirepaketea.CacheServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CacheServlet</servlet-name>
+        <url-pattern>/servlet/Cache</url-pattern>
+    </servlet-mapping>
+
+</web-app>
